@@ -8,7 +8,16 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        Dark_Indigo : '#26395C',
+        Dodger_Blue :'#0E8BFF',
+        Light_Periwinkle : '#D6EBFD'
+      },
+      fontFamily:{
+        Red_Hat : '"Red Hat Display", sans-serif'
+      }
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
