@@ -3,14 +3,14 @@ import React from 'react'
 
 function Hero() {
   return (
-    <section className="bg-[url('/hero.png')] bg-no-repeat bg-cover w-full h-[800px]"> 
+    <section className="bg-[url('/hero.png')] bg-no-repeat  bg-center bg-cover w-full lg:h-[800px] h-[700px] "> 
 
-      <div className='container py-20 lg:px-[100px] md:px-20 sm:px-10 px-2 '>
-        <h1 className='max-w-[700px] lg:leading-[74.4px] font-bold lg:text-[62px] md:text-5xl text-3xl text-white'>Find amazing things to do anytime, anywhere in Lagos.</h1>
+      <div className='container sm:py-20 py-10 lg:px-[100px] md:px-20 sm:px-10 px-4'>
+        <h1 className='max-w-[700px] lg:leading-[74.4px] font-bold lg:text-[62px] sm:text-4xl text-3xl text-white'>Find amazing things to do anytime, anywhere in Lagos.</h1>
 
         <div className='bg-[#FBFCFF] max-w-[730px] p-[30px] rounded-[8px] mt-10'>
 
-          <div className='max-w-[666px] grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3'>
+          <div className='max-w-[666px] grid grid-cols-1 lg:grid-cols-4 gap-3'>
           <Autocomplete labelPlacement='outside' label='Location' placeholder='Oshodi' className='text-[#656B89] sm:max-w-[174px]'>
             <AutocompleteItem value='Lagos'>Lagos</AutocompleteItem>
             <AutocompleteItem value='Nigeria'>Nigeria</AutocompleteItem>

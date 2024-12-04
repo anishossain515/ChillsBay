@@ -1,6 +1,7 @@
 import './App.css'
 import NavbarArea from './Components/Common/Navbar'
 import Hero from './Components/hero'
+import Mood from './Components/Mood'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
      <NavbarArea/>
      <Hero/>
+     <Mood/>
     </>
   )
 }
