@@ -13,7 +13,7 @@ function App() {
     <>
      <NavbarArea/>
      <Hero/>
-     <Mood/>
+     <Mood/> 
      <TopThings/>
      <ChillsBay/>
      <Slider/>

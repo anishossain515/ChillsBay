@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ChillsBayData } from "./Utilities/Data";
 
 function ChillsBay() {
   const [CurrentIndex, setCurrentIndex] = useState(0);
 
   const { img, head, des } = ChillsBayData[CurrentIndex];
+
+  useEffect(()=>{
+    const interval = setInterval(()=>{
+      setCurrentIndex((index)=>index === ChillsBayData.length - 1 ? 0 : index + 1)
+    },3000)
+    return ()=> clearInterval(interval)
+},[setCurrentIndex])
 
   return (
     <section className="sm:bg-white bg-[#F5FAFF] py-[50px] lg:px-16 sm:px-10 px-5">
