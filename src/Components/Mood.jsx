@@ -4,7 +4,7 @@ import { MoodData } from "./Utilities/Data";
 function Mood() {
   return (
     <section className="py-[50px]">
-      <h1 className="text-[#26395C] font-bold md:text-[42px] sm:text-4xl text-2xl text-center px-2">
+      <h1 className="text-Dark_Indigo font-bold md:text-[42px] sm:text-4xl text-2xl text-center px-2">
         What are you in the mood for?
       </h1>
 
@@ -14,7 +14,7 @@ function Mood() {
             <div className="overflow-hidden">
               <img src={img} alt={title} className="w-full h-[500px] object-cover"/>
             </div>
-            <h2 className="text-[#26395C] font-bold text-center text-[32px] pt-3">
+            <h2 className="text-Dark_Indigo font-bold text-center text-[32px] pt-3">
               {title}
             </h2>
           </div>

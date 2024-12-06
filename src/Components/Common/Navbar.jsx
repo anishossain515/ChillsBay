@@ -123,7 +123,7 @@ function NavbarArea() {
       </NavbarContent>
 
       {/* MenuBar */}
-      <NavbarMenu className="bg-[#F5FAFF] py-10 text-[#26395C] font-medium text-2xl gap-8">
+      <NavbarMenu className="bg-[#F5FAFF] py-10 text-Dark_Indigo font-medium text-2xl gap-8">
         {menuItems.map((item, index) => (
           <NavbarMenuItem
             key={index}

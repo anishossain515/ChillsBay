@@ -10,6 +10,7 @@ export default {
   theme: {
     extend: {
       colors:{
+        primary:'#0E8BFF',
         Dark_Indigo : '#26395C',
         Dodger_Blue :'#0E8BFF',
         Light_Periwinkle : '#D6EBFD'
