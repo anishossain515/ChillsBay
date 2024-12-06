@@ -17,15 +17,17 @@ function SliderInfo({
   }, [setCurrentIndex, totalUsers]);
 
   return (
-    <div className="overflow-hidden flex flex-col  items-center justify-center space-y-10 ">
+    <div className="overflow-hidden flex flex-col items-center justify-center space-y-10">
       <div className="flex lg:flex-row flex-col items-center gap-[30px] md:mt-10">
+ 
+    {/* first part  */} 
+      <div className="flex flex-col lg:gap-8 gap-4">
 
-       <div className="flex flex-col lg:gap-8 gap-4">
-        <h3 className="text-Dark_Indigo font-bold md:text-[32px] sm:text-3xl text-2xl max-w-[240px] sm:max-w-[471px] text-start">Upcoming events this weekend</h3>
-
-       <div className="flex flex-col items-center gap-4">
+      <h3 className="text-Dark_Indigo font-bold md:text-[32px] sm:text-3xl text-2xl max-w-[240px] sm:max-w-[471px] text-start">Upcoming events this weekend</h3>
+         
+      <div className="flex flex-col items-center md:items-end gap-4 pb-4">
        <img src={img} alt="SliderImg" />
-         {/* Circle Slider */}
+        {/* Circle Slider */}
         <div className="space-x-6">
         {Array.from(Array(totalUsers).keys()).map((index) => (
           <button
@@ -39,10 +41,12 @@ function SliderInfo({
       </div>
        {/* Circle Slider */}
        </div>
-
        </div>
+      {/* first part  */}
 
-        <div className="flex flex-col items-start space-y-5">
+      {/* second part */}
+
+      <div className="flex flex-col items-start space-y-5">
 
           <h1 className="text-Dark_Indigo font-bold sm:text-[42px] leading-10 text-2xl max-w-[385px]">{head}</h1>
 
@@ -92,7 +96,8 @@ function SliderInfo({
         </div>
 
         </div>
-
+     {/* second part */}
+     
       </div>
     
     </div>
