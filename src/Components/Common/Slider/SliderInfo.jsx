@@ -21,8 +21,25 @@ function SliderInfo({
       <div className="flex lg:flex-row flex-col items-center gap-[30px] md:mt-10">
 
        <div className="flex flex-col lg:gap-8 gap-4">
-        <h3 className="text-Dark_Indigo font-bold md:text-[32px] sm:text-3xl text-[18px]">Upcoming events this weekend</h3>
-        <img src={img} alt="SliderImg" />
+        <h3 className="text-Dark_Indigo font-bold md:text-[32px] sm:text-3xl text-2xl max-w-[240px] sm:max-w-[471px] text-start">Upcoming events this weekend</h3>
+
+       <div className="flex flex-col items-center gap-4">
+       <img src={img} alt="SliderImg" />
+         {/* Circle Slider */}
+        <div className="space-x-6">
+        {Array.from(Array(totalUsers).keys()).map((index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`size-[10px] rounded-full transition-all duration-300 ${
+              index === currentIndx ? "bg-[#26395C]" : "bg-[#969DAA]"
+            }`}
+          />
+        ))}
+      </div>
+       {/* Circle Slider */}
+       </div>
+
        </div>
 
         <div className="flex flex-col items-start space-y-5">
@@ -34,14 +51,14 @@ function SliderInfo({
           </p>
           
           {/* Tags */}
-          <div className="flex flex-wrap gap-2 sm:gap-0 sm:flex-row flex-col lg:gap-4 max-w-[372px]">
+          <div className="flex flex-wrap gap-2 sm:gap-0 lg:gap-4 max-w-[372px]">
             
-            <div className="flex items-center space-x-[15px]">
+            <div className="flex items-center gap-[10px]">
               <CalendarIcon className="size-6 text-[#0E8BFF]"/>
               <p className="text-Dark_Indigo font-bold text-[20px]">Dec 12 2022</p>
             </div>
 
-            <div className="flex items-center gap-[15px] xl:pl-14 lg:pl-0 sm:pl-8">
+            <div className="flex items-center sm:gap-[15px] gap-2 xl:pl-14 lg:pl-0 sm:pl-8">
               <MapPinIcon className="size-6 text-[#0E8BFF]"/>
               <p className="text-Dark_Indigo font-bold text-[20px]">TBS  Lagos</p>
             </div>
@@ -51,7 +68,7 @@ function SliderInfo({
               <p className="text-Dark_Indigo font-bold text-[20px]">9:00 PM</p>
             </div>
 
-            <div className="flex items-center gap-[15px] xl:pl-28 lg:pl-10 sm:pl-20">
+            <div className="sm:flex items-center gap-[15px] xl:pl-28 lg:pl-10 sm:pl-20 hidden">
               <TagIcon className="size-6 text-[#0E8BFF]"/>
               <p className="text-Dark_Indigo font-bold text-[20px]">N20,000</p>
             </div>
@@ -66,7 +83,7 @@ function SliderInfo({
         </div>
         {/* Button */}
 
-        <div className="flex items-center gap-3">
+        <div className="sm:flex items-center gap-3 hidden">
           <p className="text-Dark_Indigo text-[20px]">Connect with us on:</p>
          <div className="flex items-center gap-5">
            <img src="/Twitter.png" alt="Twitter" />
@@ -77,19 +94,7 @@ function SliderInfo({
         </div>
 
       </div>
-      {/* Circle Slider */}
-
-      <div className="space-x-6">
-        {Array.from(Array(totalUsers).keys()).map((index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`size-[10px] rounded-full transition-all duration-300 ${
-              index === currentIndx ? "bg-[#26395C]" : "bg-[#969DAA]"
-            }`}
-          />
-        ))}
-      </div>
+    
     </div>
   );
 }

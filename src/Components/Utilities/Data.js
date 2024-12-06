@@ -78,12 +78,12 @@ export const SliderData = [
     },
     {
         img:'/slider2.png',
-        head:'GTCO Food and Drink Festival 2022: Africa\'s Biggest Food and Drink Festival',
+        head:'Wizkid made in lagos tour',
         des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
     },
     {
         img:'/slider3.png',
-        head:'The 90s with Dj Neptune',
+        head:'Wizkid made in lagos tour',
         des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
     },
 ]
