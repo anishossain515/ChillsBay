@@ -25,7 +25,7 @@ function Slider() {
 
         <h1 className="text-Dark_Indigo font-bold lg:text-[42px] md:text-4xl text-3xl text-center px-2">See How People are Chilling On Chillsbay</h1>
         
-        <div className="flex items-center lg:px-[100px] md:px-20 sm:px-10 px-4">
+      <div className="flex items-center lg:px-[100px] md:px-20 sm:px-10 px-4 py-10">
         <button
           onClick={preIndex}
           className="xl:block hidden transition-all duration-300 translate hover:scale-105"

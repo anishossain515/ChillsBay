@@ -17,6 +17,9 @@ export default {
       },
       fontFamily:{
         Red_Hat : '"Red Hat Display", sans-serif'
+      },
+      boxShadow:{
+        inner_shadow:'0px -1px 0px 0px #9A9FBF1A inset'
       }
     },
   },

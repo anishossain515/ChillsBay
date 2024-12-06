@@ -1,4 +1,5 @@
 import './App.css'
+import Chilling from './Components/Chilling'
 import ChillsBay from './Components/ChillsBay'
 import NavbarArea from './Components/Common/Navbar'
 import Slider from './Components/Common/Slider/Slider'
@@ -16,6 +17,7 @@ function App() {
      <TopThings/>
      <ChillsBay/>
      <Slider/>
+     <Chilling/>
     </>
   )
 }
