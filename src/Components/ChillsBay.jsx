@@ -42,7 +42,7 @@ function ChillsBay() {
         </div>
 
         {/* Mobile View */}
-        <div className="max-w-[320px] mx-auto">
+        <div className="sm:hidden flex max-w-[320px] mx-auto">
           <div className="flex flex-col items-center max-w-[317.95px] mt-10">
             <img
               src={img}

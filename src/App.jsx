@@ -1,6 +1,7 @@
 import './App.css'
 import Chilling from './Components/Chilling'
 import ChillsBay from './Components/ChillsBay'
+import Footer from './Components/Common/Footer'
 import NavbarArea from './Components/Common/Navbar'
 import Slider from './Components/Common/Slider/Slider'
 import Hero from './Components/hero'
@@ -18,6 +19,7 @@ function App() {
      <ChillsBay/>
      <Slider/>
      <Chilling/>
+     <Footer/>
     </>
   )
 }

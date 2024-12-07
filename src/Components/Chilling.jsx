@@ -1,5 +1,13 @@
 import React from "react";
 
+const ChillingImg = [
+  { img: "/chilling1.png" },
+  { img: "/chilling2.png" },
+  { img: "/chilling3.png" },
+  { img: "/chilling4.png" },
+  { img: "/chilling5.png" },
+  { img: "/chilling6.png" },
+];
 function Chilling() {
   return (
     <section className="shadow-inner_shadow border border-[#9A9FBF1A]">
@@ -10,48 +18,15 @@ function Chilling() {
         </h1>
 
         <div className="flex flex-wrap items-center md:justify-start justify-center pt-8 sm:max-w-[1300px] max-w-full">
-          <div className="w-[150px] sm:w-[200px]">
-            <img
-              src="/chilling1.png"
-              alt="ChillingImg"
-              className="w-full object-cover sm:h-[200px] h-[145.63px]"
-            />
-          </div>
-          <div className="w-[150px] sm:size-[200px]">
-            <img
-              src="/chilling2.png"
-              alt="ChillingImg"
-              className="w-full object-cover sm:h-[200px] h-[145.63px]"
-            />
-          </div>
-          <div className="w-[150px] sm:size-[200px]">
-            <img
-              src="/chilling3.png"
-              alt="ChillingImg"
-              className="w-full object-cover sm:h-[200px] h-[145.63px]"
-            />
-          </div>
-          <div className="w-[150px] sm:size-[200px]">
-            <img
-              src="/chilling4.png"
-              alt="ChillingImg"
-              className="w-full object-cover sm:h-[200px] h-[145.63px]"
-            />
-          </div>
-          <div className="w-[150px] sm:size-[200px]">
-            <img
-              src="/chilling5.png"
-              alt="ChillingImg"
-              className="w-full object-cover sm:h-[200px] h-[145.63px]"
-            />
-          </div>
-          <div className="w-[150px] sm:size-[200px]">
-            <img
-              src="/chilling6.png"
-              alt="ChillingImg"
-              className="w-full object-cover sm:h-[200px] h-[145.63px]"
-            />
-          </div>
+          {ChillingImg.map(({ img }, index) => (
+            <div key={index} className="w-[150px] sm:w-[200px]">
+              <img
+                src={img}
+                alt="ChillingImg"
+                className="w-full object-cover sm:h-[200px] h-[145.63px]"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

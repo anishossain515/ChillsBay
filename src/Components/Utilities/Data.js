@@ -87,3 +87,32 @@ export const SliderData = [
         des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
     },
 ]
+
+
+export const FooterData = {
+    socialIcons:[
+         {img :'fb.png', link:'https://www.facebook.com/'},
+         {img:'x.png', link:'https://www.twitter.com/'},
+         {img:'ins.png', link:'https://www.instagram.com/'},
+         {img:'ln.png', link:'https://www.linkedin.com/'},
+         {img:'yt.png', link:'https://www.youtube.com/'},
+         {img:'tt.png', link:'https://www.tiktok.com/'},
+        ],
+   
+
+    sections:[
+       {
+         title:'menu',
+         menuLink:[
+            {items:['Home','Eat','Drink','Events','Club']},
+            {items:['Blog','Careers','Contact','FAQs'] }
+         ]
+       },
+       {
+        title:'Utility Pages',
+        menuLink:[
+            {items:['Start Here','Pay with Crypto','Style Guide','Password Protected','404 Not Found','Licenses','Changelog']}
+        ]
+       }
+    ]
+}
