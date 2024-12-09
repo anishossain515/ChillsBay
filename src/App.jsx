@@ -1,12 +1,12 @@
 import './App.css'
-import Chilling from './Components/Chilling'
-import ChillsBay from './Components/ChillsBay'
 import Footer from './Components/Common/Footer'
 import NavbarArea from './Components/Common/Navbar'
 import Slider from './Components/Common/Slider/Slider'
-import Hero from './Components/hero'
-import Mood from './Components/Mood'
-import TopThings from './Components/TopThings'
+import Hero from './Components/Pages/Homepage/Hero'
+import Chilling from './Components/Pages/Homepage/Chilling'
+import Mood from './Components/Pages/Homepage/Mood'
+import ChillsBay from './Components/Pages/Homepage/ChillsBay'
+import TopThings from './Components/Pages/Homepage/TopThings'
 
 function App() {
 

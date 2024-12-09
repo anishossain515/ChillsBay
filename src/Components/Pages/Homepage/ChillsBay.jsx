@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ChillsBayData } from "./Utilities/Data";
+import { ChillsBayData } from "../../Utilities/Data";
 
 function ChillsBay() {
   const [CurrentIndex, setCurrentIndex] = useState(0);

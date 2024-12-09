@@ -20,7 +20,11 @@ import {
   UserIcon,
   ChevronDownIcon,
   ShoppingCartIcon,
+  UserCircleIcon,
 } from "@heroicons/react/24/outline";
+import ProfileModal from "../Pages/Homepage/Modal";
+import DropDown from "../Pages/Homepage/DropDown";
+const value = true;
 function NavbarArea() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropMenuOpen, setIsDropMenuOpen] = useState(false);
@@ -30,13 +34,7 @@ function NavbarArea() {
   };
 
   const menuItems = ["Eat & Drink", "Events", "Club"];
-  const dropMenuItems = [
-    "My Profile",
-    "Pay With Crypto",
-    "Cart",
-    "Contact Us",
-    "Log Out",
-  ];
+  const dropMenuItems = ["My Profile", "Pay With Crypto", "Cart", "Contact Us"];
 
   return (
     <Navbar
@@ -44,8 +42,8 @@ function NavbarArea() {
       onMenuOpenChange={setIsMenuOpen}
       className="py-2"
       maxWidth="2xl"
-      isBlurred='false'
-      position='static'
+      isBlurred="false"
+      position="static"
     >
       <NavbarBrand justify="start" className="md:w-full w-44">
         <img src="/logo.png" alt="Logo" />
@@ -90,21 +88,7 @@ function NavbarArea() {
           </NavbarItem>
 
           <NavbarItem>
-            <Dropdown>
-              <DropdownTrigger>
-                <Button
-                  variant="none"
-                  className="text-Dark_Indigo text-[18px] cursor-pointer"
-                >
-                  <UserIcon className="text-Dark_Indigo size-6" /> Account
-                </Button>
-              </DropdownTrigger>
-              <DropdownMenu aria-label="profile">
-                <DropdownItem key="profile">My Profile</DropdownItem>
-                <DropdownItem key="history">My History</DropdownItem>
-                <DropdownItem key="sign out">Sign Out</DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
+            {value === true ? <ProfileModal /> : <DropDown />}
           </NavbarItem>
         </div>
 
@@ -113,10 +97,10 @@ function NavbarArea() {
           aria-level={isMenuOpen ? "Close menu" : "Open menu"}
           className="lg:hidden"
         />
-        {/* Toggle Button */}
+
         <Button
           color="primary"
-          className="font-bold font-Red_Hat md:flex hidden"
+          className="font-bold font-Red_Hat lg:flex hidden"
         >
           Contact Now
         </Button>
@@ -169,7 +153,7 @@ function NavbarArea() {
             color="primary"
             className="px-[28px] py-3 transform transition-transform duration-300 ease-in-out translate hover:scale-105 hover:shadow-lg"
           >
-            Get Started
+            {value === true ? "Log Out" : "Log In"}
           </Button>
         </NavbarItem>
       </NavbarMenu>

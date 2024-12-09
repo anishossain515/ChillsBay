@@ -1,6 +1,6 @@
 import React from 'react'
-import Card from './Common/Card'
-import { TopThingsData } from './Utilities/Data'
+import Card from '../../Common/Card'
+import { TopThingsData } from '../../Utilities/Data'
 
 function TopThings() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { MoodData } from "./Utilities/Data";
+import { MoodData } from "../../Utilities/Data";
 
 function Mood() {
   return (

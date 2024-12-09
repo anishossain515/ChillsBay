@@ -42,7 +42,7 @@ function Footer() {
         </div>
 
         {/* Right Section */}
-        <div className="lg:col-span-8 grid grid-cols-1 xl:grid-cols-3 2xl:gap-10 gap-5">
+        <div className="lg:col-span-8 col-span-4 grid grid-cols-1 xl:grid-cols-3 2xl:gap-10 gap-5">
           {sections.map(({ title, menuLink }, index) => (
             <MenuSection key={index} title={title} menus={menuLink} />
           ))}
