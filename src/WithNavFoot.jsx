@@ -1,6 +1,6 @@
 import React from 'react'
-import NavbarArea from '../Common/Navbar'
-import Footer from '../Common/Footer'
+import NavbarArea from './Components/Common/Navbar'
+import Footer from './Components/Common/Footer'
 
 function WithNavFoot({children}) {
   return (

@@ -116,3 +116,30 @@ export const FooterData = {
        }
     ]
 }
+
+export const EatCardData = [
+    {
+        img:'eatCard1.png',
+        head:'Slow Lagos',
+        details:'2 Musa Yar\'Adua, Lagos Nigeria',
+        des:'African Italian Asian Continental'
+    },
+    {
+        img:'eatCard2.png',
+        head:'Nok by Alara',
+        details:'2 Musa Yar\'Adua, Lagos Nigeria',
+        des:'African Italian Asian Continental'
+    },
+    {
+        img:'eatCard3.png',
+        head:'Noir',
+        details:'2 Musa Yar\'Adua, Lagos Nigeria',
+        des:'African Italian Asian Continental'
+    }, 
+    {
+        img:'eatCard4.png',
+        head:'Soho',
+        details:'2 Musa Yar\'Adua, Lagos Nigeria',
+        des:'African Italian Asian Continental'
+    }
+]

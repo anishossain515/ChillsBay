@@ -1,7 +1,7 @@
 import './App.css'
 import HomePage from './Components/Pages/Homepage/HomePage'
 import EatDrink from './Components/Pages/EatDrink/EatDrink'
-import WithNavFoot from './Components/Pages/WithNavFoot'
+import WithNavFoot from './WithNavFoot'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
