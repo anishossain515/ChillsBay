@@ -24,7 +24,7 @@ import {
 } from "@heroicons/react/24/outline";
 import ProfileModal from "../Pages/Homepage/Modal";
 import DropDown from "../Pages/Homepage/DropDown";
-import { useNavigate } from "react-router-dom";
+import {NavLink, useNavigate } from "react-router-dom";
 const value = true;
 function NavbarArea() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,7 +57,9 @@ function NavbarArea() {
       <NavbarContent justify="end">
         <div className="space-x-8 lg:flex hidden">
           <NavbarItem className="text-Dark_Indigo text-[18px] cursor-pointer">
-            Eat & Drink
+           <NavLink to='/eatDrink' style={({isActive})=>(
+             {color: isActive ? "#0E8BFF" : '#26395C'}
+           ) }>Eat & Drink</NavLink>
           </NavbarItem>
           <NavbarItem className="text-Dark_Indigo text-[18px] cursor-pointer">
             Club{" "}

@@ -1,16 +1,18 @@
 import './App.css'
 import HomePage from './Components/Pages/Homepage/HomePage'
+import EatDrink from './Components/Pages/EatDrink/EatDrink'
 import WithNavFoot from './Components/Pages/WithNavFoot'
-import { Routes,Route,Router,BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
 
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path='/' element={<WithNavFoot><HomePage/></WithNavFoot>}/>
+        <Route path='/eatDrink' element={<WithNavFoot><EatDrink/></WithNavFoot>}/>
       </Routes>
-    </BrowserRouter>
+    </Router>
   )
 }
 
