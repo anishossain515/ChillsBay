@@ -1,26 +1,16 @@
 import './App.css'
-import Footer from './Components/Common/Footer'
-import NavbarArea from './Components/Common/Navbar'
-import Slider from './Components/Common/Slider/Slider'
-import Hero from './Components/Pages/Homepage/Hero'
-import Chilling from './Components/Pages/Homepage/Chilling'
-import Mood from './Components/Pages/Homepage/Mood'
-import ChillsBay from './Components/Pages/Homepage/ChillsBay'
-import TopThings from './Components/Pages/Homepage/TopThings'
+import HomePage from './Components/Pages/Homepage/HomePage'
+import WithNavFoot from './Components/Pages/WithNavFoot'
+import { Routes,Route,Router,BrowserRouter } from 'react-router-dom'
 
 function App() {
 
   return (
-    <>
-     <NavbarArea/>
-     <Hero/>
-     <Mood/> 
-     <TopThings/>
-     <ChillsBay/>
-     <Slider/>
-     <Chilling/>
-     <Footer/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<WithNavFoot><HomePage/></WithNavFoot>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

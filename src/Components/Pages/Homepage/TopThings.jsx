@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../../Common/Card'
+import Card from './TopThingCard'
 import { TopThingsData } from '../../Utilities/Data'
 
 function TopThings() {

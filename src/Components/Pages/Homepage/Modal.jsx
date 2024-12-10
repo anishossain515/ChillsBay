@@ -67,7 +67,7 @@ function ProfileModal() {
 
               {/* right part */}
 
-              <div className="w-full md:w-2/3 p-8">
+              <div className="w-full md:w-2/3 px-[50px] py-20">
                 <div>
                   {" "}
                   <img src="/logo.png" alt="Logo" className="w-fit mx-auto" />

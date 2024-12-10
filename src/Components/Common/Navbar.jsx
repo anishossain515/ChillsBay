@@ -24,10 +24,12 @@ import {
 } from "@heroicons/react/24/outline";
 import ProfileModal from "../Pages/Homepage/Modal";
 import DropDown from "../Pages/Homepage/DropDown";
+import { useNavigate } from "react-router-dom";
 const value = true;
 function NavbarArea() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropMenuOpen, setIsDropMenuOpen] = useState(false);
+  const navigate = useNavigate()
 
   const ToggleMenuDrop = () => {
     setIsDropMenuOpen(!isDropMenuOpen);
@@ -36,6 +38,9 @@ function NavbarArea() {
   const menuItems = ["Eat & Drink", "Events", "Club"];
   const dropMenuItems = ["My Profile", "Pay With Crypto", "Cart", "Contact Us"];
 
+  const Navigate = ()=>{
+    navigate('/')
+  }
   return (
     <Navbar
       isMenuOpen={isMenuOpen}
@@ -46,7 +51,7 @@ function NavbarArea() {
       position="static"
     >
       <NavbarBrand justify="start" className="md:w-full w-44">
-        <img src="/logo.png" alt="Logo" />
+        <button onClick={Navigate}><img src="/logo.png" alt="Logo" /></button>
       </NavbarBrand>
 
       <NavbarContent justify="end">
