@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { SliderData } from "../../Utilities/Data";
-import SliderInfo from "./SliderInfo";
+import SliderInfo from "../../Common/SliderInfo";
 
-function Slider() {
+function HomeSlider() {
   const [currentIndx, setCurrentIndex] = useState(0);
 
   const preIndex = () => {
@@ -34,13 +34,13 @@ function Slider() {
         </button>
 
         <div className="max-w-[1100px] mx-auto">
-          <SliderInfo 
-            des={des}
-            img={img}
-            head={head}
-            currentIndx={currentIndx}
-            setCurrentIndex={setCurrentIndex}
-            totalUsers={SliderData.length}
+          <SliderInfo
+          img={img}
+          des={des}
+          head={head}
+          currentIndx={currentIndx}
+          setCurrentIndex={setCurrentIndex}
+          totalUsers={SliderData.length}
           />
         </div>
 
@@ -57,4 +57,4 @@ function Slider() {
   );
 }
 
-export default Slider;
+export default HomeSlider;

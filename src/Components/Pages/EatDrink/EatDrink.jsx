@@ -2,6 +2,7 @@ import React from "react";
 import DrinkHero from "./DrinkHero";
 import FindPlace from "./FindPlace";
 import EatCard from "./EatCard";
+import EatSlider from "./EatSlider";
 
 function EarDrink() {
   return (
@@ -9,6 +10,7 @@ function EarDrink() {
       <DrinkHero />
       <FindPlace/>
       <EatCard/>
+      <EatSlider/>
     </>
   );
 }

@@ -4,7 +4,7 @@ import Mood from './Mood'
 import TopThings  from './TopThings'
 import ChillsBay  from './ChillsBay'
 import Chilling from './Chilling'
-import Slider from '../../Common/Slider/Slider'
+import HomeSlider from './HomeSlider'
 function HomePage() {
   return (
     <>
@@ -12,7 +12,7 @@ function HomePage() {
       <Mood/>
       <TopThings/>
       <ChillsBay/>
-      <Slider/>
+      <HomeSlider/>
       <Chilling/>    
     </>
   )
