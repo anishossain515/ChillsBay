@@ -26,7 +26,7 @@ function Footer() {
   };
 
   return (
-    <footer className="py-20 px-5 lg:px-20 bg-[#F8FAFD]">
+    <footer className="py-20 px-5 lg:px-20 bg-white">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
         {/* Left Section */}
         <div className="lg:col-span-4">
