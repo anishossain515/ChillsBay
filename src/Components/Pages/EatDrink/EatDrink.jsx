@@ -3,6 +3,7 @@ import DrinkHero from "./DrinkHero";
 import FindPlace from "./FindPlace";
 import EatCard from "./EatCard";
 import EatSlider from "./EatSlider";
+import Restaurants from "./Restaurants";
 
 function EarDrink() {
   return (
@@ -11,6 +12,7 @@ function EarDrink() {
       <FindPlace/>
       <EatCard/>
       <EatSlider/>
+      <Restaurants/>
     </>
   );
 }

@@ -2,12 +2,12 @@ import { Button } from '@nextui-org/react'
 import React from 'react'
 import { EatCardData } from '../../Utilities/Data'
 
-function EatCard() {
+function Restaurants() {
   return (
     <section className='bg-[#F5FAFF]'>
         <div className='max-w-[1400px] flex flex-col mx-auto md:px-20 sm:px-8 px-4 sm:py-16 py-10'>
             <div className='flex sm:justify-between justify-center sm:pt-0 pt-5'>
-              <h1 className='text-Dark_Indigo font-bold sm:text-[32px] text-2xl text-center'>Popular restaurants in Lagos </h1>
+              <h1 className='text-Dark_Indigo font-bold sm:text-[32px] text-2xl text-center'>Restaurants nearby</h1>
               <h4 className='text-Dodger_Blue font-semibold text-2xl sm:block hidden'>See More</h4>
             </div>
 
@@ -32,4 +32,4 @@ function EatCard() {
   )
 }
 
-export default EatCard
+export default Restaurants

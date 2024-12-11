@@ -23,7 +23,7 @@ function SliderInfo({
     {/* first part  */} 
       <div className="flex flex-col lg:gap-8 gap-4">
 
-      <h3 className="text-Dark_Indigo font-bold md:text-[32px] sm:text-3xl text-2xl max-w-[240px] sm:max-w-[471px] text-start">Upcoming events this weekend</h3>
+      <h3 className="text-Dark_Indigo font-bold md:text-[32px] sm:text-3xl text-2xl max-w-[240px] sm:max-w-[471px] text-start">Upcoming Eat & Drink Events</h3>
          
       <div className="flex flex-col items-center md:items-end gap-4 pb-4">
        <img src={img} alt="SliderImg" />
