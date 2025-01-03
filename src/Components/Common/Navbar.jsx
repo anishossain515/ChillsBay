@@ -89,9 +89,11 @@ function NavbarArea() {
           </NavbarItem>
 
           <NavbarItem className="cursor-pointer">
+            <NavLink to='/payment'>
             <Badge content="3" color="primary" className="size-[30px]">
               <ShoppingCartIcon className="size-[30px] text-Dark_Indigo" />
             </Badge>
+            </NavLink>
           </NavbarItem>
 
           <NavbarItem>

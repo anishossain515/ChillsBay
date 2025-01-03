@@ -46,7 +46,7 @@ function Footer() {
           {sections.map(({ title, menuLink }, index) => (
             <MenuSection key={index} title={title} menus={menuLink} />
           ))}
-          <div className="bg-[#F5FAFF] px-6 py-[30px] rounded-2xl flex flex-col max-w-[288px]">
+          <div className="bg-[#F5FAFF] px-6 py-[30px] rounded-2xl flex flex-col max-h-[300px] max-w-[288px]">
             <img src="/footerCardImg.png" alt="FooterCardImg" className="size-[54px] object-cover mb-4" />
             <h3 className="text-Dark_Indigo font-bold text-xl">Become a Partner</h3>
             <p className="text-[#656B89] mt-3">
